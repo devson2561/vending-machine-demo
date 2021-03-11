@@ -1,0 +1,7 @@
+{
+  "db": {
+    "url": "mongodb://localhost:27017/vending-machine",
+    "name": "db",
+    "connector": "loopback-connector-mongodb"
+  }
+}

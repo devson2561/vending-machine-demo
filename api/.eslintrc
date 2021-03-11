@@ -1,0 +1,6 @@
+{
+  "extends": "loopback",
+  "rules": {
+    "object-curly-spacing": "off"
+  }
+}

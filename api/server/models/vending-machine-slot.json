@@ -1,0 +1,35 @@
+{
+  "name": "VendingMachineSlot",
+  "plural": "vending-machine-slots",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+
+  "properties": {
+    "stock": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "capacity": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    }
+  },
+  "validations": [],
+  "relations": {
+    "vendingMachine": {
+      "type": "belongsTo",
+      "model": "VendingMachine"
+    },
+    "product": {
+      "type": "belongsTo",
+      "model": "Product"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
